@@ -220,121 +220,39 @@ p.work-time {
 /* ________ CATALOG __________ */
 /* CSS Only Menu   http://ruseller.com/lessons.php?rub=2&id=2031  -->  http://jsfiddle.net/Cerebrl/uhykY/ */
 
-#сatalog {
-/*
-        margin: 30px 0 50px 0;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-*/
+.сatalog {
+height: 40px;
+    width: 182px;
+    background-color: #0f5098;  
+}
+    
+.category li {
+    float: left;
+}  
+.сatalog-child a {
+   margin: 0px;
+    padding: 15px 7px 0 14px;
+}
+.сatalog-font{
+    color: #fff;
     font-size: 17px;
-    }
-    
-    #сatalog .сatalog-wrapper {
-        display: inline-block;
-        width: 182px;
-        margin: 0 10px 0 0;
-        height: 40px;
-        position: relative;
-    }
-    
-    #сatalog .сatalog-parent {
-        height: 100%;
-        width: 100%;
-        display: block;
-        cursor: pointer;
-        line-height: 40px;
-        height: 40px;
-/*        border-radius: 5px;*/
-        background: #0f5099;
-        border: 1px solid #AAA;
-        border-bottom: 1px solid #777;
-        color: #fff;
-/*        font-weight: bold;*/
-        z-index: 2;
-        position: relative;
-        -webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
-        -webkit-transition-delay: .8s;
-        text-align: center;
-    }
-    
-    #сatalog .сatalog-parent:hover,
-    #сatalog .сatalog-content:hover ~ .сatalog-parent {
-        background: #0f5099;
-        -webkit-transition-delay: 0s, 0s, 0s;
-    }
-    
-    #сatalog .сatalog-content:hover ~ .сatalog-parent {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        z-index: 0;
-    }
-    
-    #сatalog .сatalog-content {
-        position: absolute;
-        top: 0;
-        display: block;
-        z-index: 1;
-        height: 0;
-        width: 180px;
-        padding-top: 40px;
-        -webkit-transition: height .5s ease;
-        -webkit-transition-delay: .4s;
-        border: 1px solid #777;
-        border-radius: 5px;
-        box-shadow: 0 1px 2px rgba(0,0,0,.4);
-    }
-    
-    #сatalog .сatalog-wrapper:active .сatalog-content {
-        height: 133px;
-        z-index: 3;
-        -webkit-transition-delay: 0s;
-    }
-    
-    #сatalog .сatalog-content:hover {
-        height: 163px;
-        z-index: 3;
-        -webkit-transition-delay: 0s;
-    }
-    
-    
-    #сatalog .сatalog-content ul {
-        background: #fff;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        height: 100%;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-    
-    #сatalog .сatalog-content ul a {
-        text-decoration: none;
-    }
-    
-    #сatalog .сatalog-content li:hover {
-        background: #eee;
-        color: #333;
-    }
-    
-    #сatalog .сatalog-content li {
-        list-style: none;
-        text-align: left;
-        color: #888;
-        font-size: 14px;
-        line-height: 30px;
-        height: 30px;
-        padding-left: 10px;
-        border-top: 1px solid #ccc;
-    }
-    
-    #сatalog .сatalog-content li:last-of-type {
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-.сatalog-parent img {
-
-    margin: 2px 7px 0 0;
+}  
+.сatalog-home a {
+    margin: 0px;
+    padding: 10px 7px 0 14px;
 }
 
+.сatalog img {
+    margin-top: 2px;
+}
+
+.separator {
+   float: left;
+
+     padding: 17px 0px 0 5px;
+   /* margin-top: 50px;
+*/
+}
 
 
 .item-title h1 {
@@ -342,6 +260,86 @@ p.work-time {
     font-weight: bold;
     margin-left: 15px;
 }
+
+
+
+
+.item-img {
+    border: 1px solid #ebebeb;
+    text-align: center;
+    padding: 15px 0 18px 0;
+}
+
+/* ________ additional-item __________ */
+h3.related-items {
+    font-size: 20px;
+    font-weight: bold;
+}
+.related-item {
+border-bottom: 1px solid #f2f2f1;
+}
+h3.related-items img {
+padding:33px 10px 0px 20px;
+}
+.related-item-img,.related-item-title {
+    float: left;
+}
+.related-item-price {
+    float: right;
+     margin: 32px 20px 0 15px;
+    padding: 10px;
+    background-color: #fff9e8;
+}
+.related-item-title{
+    width: 120px;
+    height: auto;
+    margin: 42px 0 0 15px;
+}
+.related-item-img {
+    margin: 30px 0px 0px 27px;
+}
+.item-price-1 {
+   font-size: 16px;
+    font-weight: bold;
+}
+.item-price-2 {
+   font-size: 13.5px;
+}
+
+/* ________ info __________ */
+.info-wrap {
+    margin: 10px 0 0 40px;
+    width: 220px;
+}
+.info-img, .info-title, .info-question {
+    float: left;
+    display: inline-block;
+}
+.info-title h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 10px 8px 15px;
+/*
+    line-height: 30px;
+    vertical-align: top;
+*/
+}
+.info-question {
+    margin-top: 5px;
+}
+.info-description {
+    margin-bottom: 30px;  
+}
+.info-description, .info-ukraine{
+    margin-left: 40px;
+}
+a.info-ukraine, a.info-dnepr  {
+    margin-bottom: 17px;
+     margin-top: 17px;
+    display: inline-block;
+}
+
+
 
 
 
