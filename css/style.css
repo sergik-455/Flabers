@@ -274,29 +274,30 @@ height: 40px;
 h3.related-items {
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 25px;
 }
 .related-item {
 border-bottom: 1px solid #f2f2f1;
 }
 h3.related-items img {
-padding:33px 10px 0px 20px;
+padding:3px 10px 0px 20px;
 }
 .related-item-img,.related-item-title {
     float: left;
 }
 .related-item-price {
     float: right;
-     margin: 32px 20px 0 15px;
-    padding: 10px;
+     margin: 2px 20px 0 15px;
+    padding: 5px 15px 5px 15px;
     background-color: #fff9e8;
 }
 .related-item-title{
     width: 120px;
     height: auto;
-    margin: 42px 0 0 15px;
+    margin: 12px 0 0 15px;
 }
 .related-item-img {
-    margin: 30px 0px 0px 27px;
+    margin: 10px 0px 0px 27px;
 }
 .item-price-1 {
    font-size: 16px;
@@ -341,14 +342,268 @@ a.info-ukraine, a.info-dnepr  {
 
 
 
+/* ________ tabs __________ */
+/* https://habrahabr.ru/sandbox/91471/ 
+http://jsfiddle.net/du9cbd9j/
+*/
+.tabs{
+    display:inline-block;
+}
+.tabs > div{
+    padding-top:10px;
+}
+.tabs ul{
+    margin:0px;
+    padding:0px;
+}
+.tabs ul:after{
+    content:"";
+    display:block;
+    clear:both;
+    height:5px;
+/*    background:#46c765;*/
+}
+.tabs ul li{
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    display:block;
+    float:left;
+    padding:10px 15px;
+    background:#fff;
+    color:#1a5eab;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-top: 4px solid #fff;
+    font-size: 14px;
+}
+.tabs ul li.active, .tabs ul li.active:hover{
+    background:#fff;
+    color:#121212;
+    border-top: 4px solid #165aa7;
+}
+.tabs ul li:hover{
+    background:#d6d6d7;
+    border-top: 4px solid #d6d6d7;
+}
+
+/* tabs content*/
+.tabs {
+    margin-top: 55px;
+    margin-left: 10px;
+}
+.tabs p {
+    margin-bottom: 33px;
+   // margin-right: 10px;
+}
+.tabs ul {
+    margin-bottom: 15px;
+}
 
 
 
 
 
+/* ________ looked __________ */
+.looked-wrap {
+    background-color: #f1efed;
+}
+.looked-title-1, .looked-title-2 {
+    text-transform: uppercase;
+
+}
+.looked-title-1 {
+    font-size: 25px;
+    color: #4f4f4f;
+    padding-top: 10px;
+}
+.looked-title-2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #1a5eaa;
+    padding-bottom: 10px;
+}
+.looked-items {
+    height: 400px;
+    width: 1500px;
+}
+.background-img {
+    padding-top: 0px;
+}
+.background-img {
+   // background: url(../img/background-img.png) no-repeat ;  /* Параметры фона */
+    //  background-position: left center; /* Положение фона */
+      //background-position: 3% 45%;
+     //background-color: #f4f4f5;
+}
+
+/* _________ carousel __________ */
+
+.carousel li a {
+    margin: 0px 10px 16px 10px;
+    width: 210px;
+}
+.carousel-img {
+    height: 255px;
+    width: 250px;
+    border-bottom: 1px solid #f1efed;
+}
+.carousel-img a img {
+    padding-left: 10px;
+}
+.ot {
+    font-size: 16px;
+}
+.carousel-price {
+    font-size: 30px;
+    font-weight: bold;
+}
+.carousel-price sup{
+    font-size: 16px;
+    font-weight: normal;
+}
+.carousel li p {
+    margin-left: 10px;
+}
+.carousel li h4 {
+    margin: 22px 0 22px 0;
+    font-size: 18px;
+    color: #30609f;
+}
+.carousel li h4 a{
+    color: #30609f;
+}
+.stok {
+    color: #4fa746;
+    font-size: 16px;
+}
+
+/* ____-----------------------____ footer ___-------------------_______ */
+.footer-wrap {
+     color: #fff;
+}
+.footer-top {
+   height: 215px; 
+    width: auto;
+    background-color: #0e4f97;
+}
+.footer-bottom {
+   height: 50px;
+    width: auto;
+    background-color: #f1efed;
+}
+.footer-menu a {
+    color: #fff;
+   // margin: 18px 0px 18px 0px;
+}
+.footer-menu li a{
+    margin: 7px 40px 0px 0px;
+}
+li.last-li {
+ //   margin-bottom: 0;
+}
+.footer-title {
+    color: #ffc000;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+li.footer-title {
+    margin-top: 15px;
+     margin-bottom: 20px;
+}
+.footer-menu-1 {
+    margin: 59px 0 0 15px;
+}
+
+.footer-phone{
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 59px;
+}
+.footer-phone li{
+margin-bottom: 8px;
+}
+.footer-location {
+    font-size: 13px;
+    font-weight: normal;
+}
+.footer-phone img {
+    margin-left: 60px;
+    margin-right: 14px;
+}
+.footer-phone-1 {
+    margin-left: 92px;
+}
+
+.footer-serch-wrap {
+    height: 100px;
+    width: 550px;
+    border: 1px solid #fff;
+    padding: 17px 19px 17px 19px;
+    margin-top: 50px;
+    margin-left: 58px;
+}
+
+/* _________FOOTER-SEARCH__________ */
+.footer-search {
+    float: left;
+    display: inline-block;
+    width: 510px; /* Ширина поля с кнопкой */
+    border: 1px solid #f1f3f6; /* Параметры рамки */
+    height: 35px; /* Минимальная высота */
+    margin: 15px 0px 0px 0px;
+    padding: 0;
+   }
+
+ .footer-search input[type="search"] {
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 404px; /* Ширина поля */
+     height: 35px;
+    vertical-align: text-bottom; /* Выравнивание */
+      border: 1px solid #ccc;
+     color: #111;
+      background: url(../img/letter.png) no-repeat ;  /* Параметры фона */
+     // background-position: left center; /* Положение фона */
+      background-position: 3% 45%;
+     background-color: #f4f4f5;
+   }
+   .footer-search input[type="submit"] {
+   /* width: 20px;  Ширина кнопки */
+    /*height: 24px;  Высота кнопки */
+    /*border: none;  Убираем рамку */
+    background: url(../img/subscribe-button.png) no-repeat 150% 150% ;  /* Параметры фона */
+/*    margin: 0px  0px 0px 480px;*/
+       float: right;
+       margin: 0px 0px 0 0;
+       border: 1px solid #ffbf00;
+       padding: 15px 15px 0 85px;
+   }
+/*изменение стиля текста в текстовом поле*/
+::-webkit-input-placeholder { 
+    color: #a1a1a1;
+    padding-left: 32px;
+    font-size: 13px;
+}
+::-moz-input-placeholder {
+    color: #a1a1a1;
+    padding-left: 22px;
+    font-size: 13px;
+}
+.footer-bottom {
+    color: #212121;
+    padding-top: 20px;
+}
+.develop {
+    float: right;
+}
 
 
 
+
+/*
 .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     border: 1px solid red;
 }
@@ -359,3 +614,4 @@ a.info-ukraine, a.info-dnepr  {
     border: 1px solid green;
     z-index: 100;
 }
+*/
