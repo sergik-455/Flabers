@@ -1,0 +1,160 @@
+.setVal input{
+    font-size: 15px;
+            border:1px solid #ebebeb;
+            background:none;
+            padding:5px;
+/*
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+*/
+			}
+
+
+.mb_slider{
+  position:relative;
+  padding:10px;
+  z-index:0;
+/*  font-family:Arial, Helvetica, sans-serif;*/
+        float: left;
+    padding-left: 0px;
+       margin-left: 20px;
+    padding-top: 0px
+}
+
+.mb_sliderBar{
+  background-color:#fafafa;
+  height: 5px;
+  width: 265px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 0 1px;
+  border-radius: 4px;
+  cursor:default;
+
+}
+/**/
+.mb_sliderHandler{
+  padding: 8px 8px 8px 8px;
+  background-color: #165aa7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50px 50px 50px 50px;
+  box-shadow: rgba(0, 0, 0, 0.11) 1px 1px 4px 1px;
+  cursor: default;
+  height: 100%;
+    margin-top:  -5px;
+}
+
+.mb_sliderEnd, .mb_sliderStart, .mb_sliderValue{
+  padding:7px;
+  position:relative;
+  text-align:right;
+  top:-5px;
+  margin:3px;
+  min-width: 50px;
+  color:#AAA;
+  white-space: nowrap;
+  cursor:default;
+}
+/*
+.mb_sliderStart{
+  text-align: right;
+}
+
+.mb_sliderEnd{
+  text-align: left;
+}
+*/
+.mb_sliderRange{
+  position:absolute;
+  height:100%;
+  margin:0;
+  top:0;
+  background: #ffcc00;
+  border-radius: 4px 0 0 4px ;
+  cursor:default;
+}
+
+/*.mb_sliderZero{
+  background-color: #fafafa;
+  position:absolute;
+  height:100%;
+  margin:0;
+  top:0;
+  border-radius:4px 0 0 4px  ;
+  cursor:default;
+}
+
+.mb_sliderZeroLabel{
+  font: 12px/12px Arial, sans-serif;
+  color: #AAA;
+  padding: 5px;
+  background-color: #fff;
+  margin-left: -4px;
+  z-index: -2;
+  border-radius: 4px;
+  margin-top: -5px;
+}
+
+/* .mb_sliderValueLabel{
+  font:14px/12px Arial, sans-serif;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+
+  margin-left:0;
+  z-index:-1;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin-top: -10px;
+  white-space: nowrap;
+} */
+
+/* ------ SLIDER -------*/
+.slider-value {
+    float: left;
+     font-size: 25px;
+    margin-right: 200px;
+    margin-left: 20px;
+}
+.slider-value p {
+    font-size:  15px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.val {
+    width:80px;
+    height: 28px;
+    padding-left: 10px;
+}
+input.val {
+
+    padding-left: 20px;
+}
+/* --- slider +/-  -----*/
+
+input.qtyplus-slider, input.qtyminus-slider  {
+    width: 22px; 
+    height: 28px;
+ 
+    background: -moz-linear-gradient(#fff, #efeeee);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#efeeee));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#efeeee');
+    padding: 0;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    border: none;
+    border: 1px solid #ebebeb;
+}
+
+input.qtyplus-slider {
+       margin-left: -9px;  
+}
+
+input.qtyminus-slider {
+    margin-right: -8px; 
+}
+.ruler {
+    margin: 0px 0px -10px 22px;
+    z-index: 1000;
+}
