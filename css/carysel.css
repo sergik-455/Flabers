@@ -176,7 +176,7 @@ h4 {
 	width: 15px;
 	height: 28px;
 	cursor: pointer;
-	background: transparent url(img/arrow-next.png) no-repeat top right;
+	background: transparent url(../img/arrow-next.png) no-repeat top right;
 }
 
 .d-carousel .jcarousel-direction-rtl .jcarousel-next-horizontal {
@@ -203,7 +203,7 @@ h4 {
 .d-carousel .jcarousel-direction-rtl .jcarousel-prev-horizontal {
 	left: auto;
 	right: 5px;
-	background-image: url(style/images/blog-arrows.jpg);
+	background-image: url(../style/images/blog-arrows.jpg);
 }
 
 .d-carousel .jcarousel-prev-horizontal:hover {

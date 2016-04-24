@@ -20,18 +20,18 @@
             
             
         <!-- carysel -->
-            <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+            <link rel="stylesheet" type="text/css" href="css/carysel.css" media="all" />
 <!--            <link rel="stylesheet" media="all" href="style/type/puritan.css" />-->
             <!--[if IE 7]>
-            <link rel="stylesheet" type="text/css" href="style/css/ie7.css" media="all" />
+            <link rel="stylesheet" type="text/css" href="carysel/css/ie7.css" media="all" />
             <![endif]-->
             
-            <script type="text/javascript" src="style/js/jquery-1.5.min.js"></script>
+            <script type="text/javascript" src="carysel/js/jquery-1.5.min.js"></script>
         <!-- slider -->
             <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
         <!--end slider -->
 
-            <script type="text/javascript" src="style/js/jquery.jcarousel.js"></script>
+            <script type="text/javascript" src="carysel/js/jquery.jcarousel.js"></script>
             <script type="text/javascript">
             jQuery(document).ready(function() {
                 // Initialise the first and second carousel by class selector.
@@ -78,7 +78,7 @@
     <div id="header">
     <div class="center clearfix">
         <div class="header-top no-gutter row">
-            <div class="col-lg-5">
+            <div class="col-lg-5 col-md-6">
                 <nav>               
                   <ul>
                     <li><a href="#">Производство </a></li>
@@ -89,30 +89,30 @@
                   </ul>   
                 </nav>
             </div>
-            <div class="col-lg-5">
-                <p><span class="delivery">Бесплатная доставка</span> по всей Украине при заказе от 1000 грн.<a href="#">Подробнее </a> </p>        
+            <div class="col-lg-5 col-md-3">
+                <p><span class="delivery">Бесплатная доставка</span> <span class="hide-block">по всей Украине при заказе от 1000 грн.</span><a href="#">Подробнее </a> </p>        
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-3">
                 <div class="authorization"><a href="#"><img src="img/registration.png" alt="" title=""> Регистрация</a> </div>
-                <div class="entry"><a href="#"><img src="img/entry.png" alt="" title=""> Регистрация</a> </div>
+                <div class="entry"><a href="#"><img src="img/entry.png" alt="" title=""> Вход</a> </div>
             </div>
         </div>     
     </div>
         <div class="header-main">
             <div class="center clearfix">
                 <div class="no-gutter row">
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3">
                         <a href="#" class="logo"><img src="img/logo.png" alt="logo" title="logo"></a>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-3">
                         <p class="phone"><img class="phone-icon" src="img/phone-icon.png" alt="" title="">(097) 123-45-78 
                             <a href="#"><img class="phone-triangle" src="img/triangle.png" alt="" title=""> </a> </p>
                         <a class="phone-title" href="#"> Перезвоните мне</a>
                     </div>
                      <div class="col-lg-1">
-                        <p class="work-time">Сегодня работаем 9:00 - 18:00 </p>               
+                        <p class="hide-block work-time">Сегодня работаем 9:00 - 18:00 </p>               
                     </div>
-                    <div class="col-lg-4">              
+                    <div class="col-lg-4 col-md-4">              
                         <form>
                             <div class="search">
                                 <input type="search"  placeholder="Поиск по сайту" value="" name="q">
@@ -120,19 +120,42 @@
                             </div>
                         </form>
                     </div> 
-                    <div class="col-lg-2">
+<!--
+                    <div class="col-lg-2 col-md-1">
                          <div class="favorites"> 
                             <img src="img/star.png" alt="star" title="star">
-                            <p class="favorites-title">Избранное</p>
-                            <p>нет товаров</p>
+                            <p class="hide-block favorites-title">Избранное</p>
+                            <p class="hide-block">нет товаров</p>
                          </div>
                     </div>
-                    <div class="col-lg-1"> 
-                        <div class="basket"> 
-                            <img src="img/basket.png" alt="star" title="basket">
-                            <p class="basket-title">Корзина</p>
-                            <p>нет товаров</p>
-                        </div>
+-->
+                    <div class="favorites-bascet col-lg-3 col-md-2"> 
+                        <Ul class="favorites-bascet" >
+                            
+                            
+                             <li>
+                                 <div class="basket"> 
+                                    <img src="img/basket.png" alt="star" title="basket">
+                                    <p class="hide-block basket-title">Корзина</p>
+                                    <p class="hide-block">нет товаров</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                 <div class="favorites"> 
+                                    <img src="img/star.png" alt="star" title="star">
+                                    <p class="hide-block favorites-title">Избранное</p>
+                                    <p class="hide-block">нет товаров</p>
+                                 </div>
+                            </li>
+                            
+                           
+                        
+                        </Ul>
+                        
+                       
+                        
+                       
                     </div>
                     
                 </div> 
@@ -143,7 +166,7 @@
         <div id="content"> 
             <div class="center"> 
                 <div class="no-gutter row">
-                     <div class="col-lg-12">
+                     <div class="col-lg-12 col-md-12">
          
 <!--    <div class="сatalog"><img src="img/catalog-button.png" alt="" title="">Каталог товаров</div>-->
                         
@@ -180,7 +203,7 @@
 -->
             </div><!-- end row -->
              <div class="no-gutter row">
-                  <div class="col-lg-12">
+                  <div class="col-lg-12 col-md-12">
                       <div class="item-title">
                         <h1>Строп канатный петлевой </h1> 
                       </div>
@@ -188,17 +211,17 @@
              </div>
                 
              <div class="no-gutter row">
-                 <div class="col-lg-3">
+                 <div class="col-lg-3 col-md-3">
                       <div class="item-img">
-                            <a class="first" title="Строп канатный петлевой" href="img/strap.png"><img src="img/strap.png" border="0" /></a>
+                            <a class="first" title="Строп канатный петлевой" href="img/strap.png"><img src="img/strap.png" border="0" alt="" title="" ></a>
                       </div>
                  </div>
-                 <div class="col-lg-6">
+                 <div class="col-lg-6 col-md-6">
                       <div class="item-description">
                           
                           
                          <div class="border-1 no-gutter row">
-                            <div class="clearfix col-lg-4">
+                            <div class="clearfix col-lg-4 col-md-4">
                                 <p class="carrying"> Грузоподьемность <img src="img/question.png"</p>
                           
                                 
@@ -217,7 +240,7 @@
                                 
                                 
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-md-8">
 <!-- 
     http://www.jqueryrain.com/demo/jquery-range-slider/                      
     https://github.com/pupunzi/jquery.mb.valueSlider
@@ -249,11 +272,11 @@ l-->
                          </div> 
                           <div class=" border-2 no-gutter row">
                               <hr>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-5">
                                 <h3 class="item-price">15205.27 <sup>грн/шт</sup> </h3>
                                 <p class="in-ctock">в наличии</p>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-md-12">
                                 
                                 <ul class="clearfix button-wrap">
                                     <li>
@@ -286,8 +309,8 @@ l-->
                          </div> 
                           
                           
-                          <div class="no-gutter row">
-                            <div class="col-lg-6">
+                          <div class="hide-block no-gutter row">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="specification-title">
                                     <h3>Характеристики</h3>
                                 </div>
@@ -295,8 +318,8 @@ l-->
                           </div>
                           
                           
-                          <div class="no-gutter row">
-                            <div class="col-lg-6">
+                          <div class="hide-block no-gutter row">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="specification">
                                     <h4>Материал</h4>
                                     <p>светлые канаты без покрытия ГОСТ 7668-80, 2688-80 </p>
@@ -307,7 +330,7 @@ l-->
                                 </div>
                                 
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="specification">
                                     <h4>Стандарт</h4>
                                     <p>ДСТУ EN 13414-1:2014, ДСТУ Б В.2.8-10-98 </p>
@@ -323,7 +346,7 @@ l-->
                           
                       </div>
                  </div>
-                 <div class="col-lg-3">
+                 <div class="col-lg-3 col-md-3">
                       <div class="info-wrap">
                         <div class="info">
                             <div class="info-title-wrap clearfix">
@@ -370,7 +393,7 @@ l-->
                           
                           
 <!--
-                           <div class="info">
+                           <div class=" hide-block info">
                             <div class="info-title-wrap clearfix">
                                 <div class="info-img">
                                     <img src="img/guarantee.png">
@@ -397,7 +420,7 @@ l-->
              </div>  
                 
          <div class="no-gutter row">
-             <div class="col-lg-3">
+             <div class="related-items-wrap hide-block col-lg-3">
                  <h3 class="related-items"><img src="img/fire.png">Сопутствующие товары</h3>
                  
                  <div class="related-item clearfix">
@@ -519,7 +542,7 @@ l-->
                  
                  </div>
                  
-             <div class="col-lg-6">
+             <div class="col-lg-6 col-md-9">
                  
                 <div class="tabs">
                     <ul>
@@ -591,10 +614,8 @@ l-->
           
                  
              </div>
-             <div class="col-lg-3">
-              
-                 
-                 
+             <div class="col-lg-3 col-md-3">
+ 
                 <div class="info-wrap-1">
                   <div class="info">
                             <div class="info-title-wrap clearfix">
@@ -627,21 +648,21 @@ l-->
         
       <!--  LOOKED -->  
       <div class="looked-wrap no-gutter row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-4">
             <h3 class="looked-title-1">ранее</h3>
             <h3 class="looked-title-2">вы смотрели</h3>
         </div> 
           
-           <div class="col-lg-3">
+           <div class="col-lg-3 col-md-3">
             <h3 class="looked-title-1"></h3>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-2">
             <h3 class="looked-title-1"></h3>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-2">
             <h3 class="looked-title-1 background-img"><img src="img/background-img.png"></h3>
         </div>
-        <div class="col-lg-1">
+        <div class="col-lg-1 col-md-1">
             <h3 class="looked-title-1"></h3>
         </div>
           
@@ -664,66 +685,66 @@ l-->
   <div id="wrapper-carousel">
   
     <div class="d-carousel">
-      <ul class="carousel">
+       <ul class="carousel">
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-1.png" alt="" /></div></a>
-            <h4><a href="#">Стяжной ремень 1.5 тн</a></h4>
+            <div class="cut-text"><h4 ><a href="#">Стяжной ремень 1.5 тн </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 15.34<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
           
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-2.png" alt="" /></div></a>
-            <h4><a href="#">Звено соединительное европейского типа G80...</a></h4>
+            <div class="cut-text"><h4 ><a href="#">Звено соединительное европейского типа G80... </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 8.17<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
           
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-3.png" alt="" /></div></a>
-            <h4><a href="#">Скоба такелажная омегообразная типа ...</a></h4>
+            <div class="cut-text"><h4 ><a href="#">Скоба такелажная омегообразная типа ... </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 28.70<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
           
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-4.png" alt="" /></div></a>
-            <h4><a href="#">Захват горизонтальный типа DHQ </a></h4>
+            <div class="cut-text"><h4 ><a href="#">Захват горизонтальный типа DHQ </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 15.34<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
           
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-5.png" alt="" /></div></a>
-            <h4><a href="#">Стальной канат ГОСТ 3077-80</a></h4>
+            <div class="cut-text"><h4 ><a href="#">Стальной канат ГОСТ 3077-80 </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 5.34<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
           
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-6.png" alt="" /></div></a>
-            <h4><a href="#">Стяжной ремень 1.5 тн</a></h4>
+            <div class="cut-text"><h4 ><a href="#">Стяжной ремень 1.5 тн </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 15.34<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
           
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-1.png" alt="" /></div></a>
-            <h4><a href="#">Строп текстильный двухветвевой (2СТ) </a></h4>
+            <div class="cut-text"><h4 ><a href="#">Строп текстильный двухветвевой (2СТ) </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 90.85<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
           
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-1.png" alt="" /></div></a>
-            <h4><a href="#">Стяжной ремень 1.5 тн</a></h4>
+            <div class="cut-text"><h4 ><a href="#">Стяжной ремень 1.5 тн </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 15.34<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
           
           <li>
             <div class="carousel-img"><a href="#"><img src="img/item-large-1.png" alt="" /></div></a>
-            <h4><a href="#">Стяжной ремень 1.5 тн</a></h4>
+            <div class="cut-text"><h4 ><a href="#">Стяжной ремень 1.5 тн </a></h4> </div>
             <p><span class="ot"> от </span> <span class="carousel-price"> 15.34<sup> грн/шт.</sup> </span> </p>
             <p><span class="stok"> на складе </span></p>
           </li>
@@ -763,10 +784,10 @@ l-->
  <!--  ----------------------FOOTER------------------------- -->  
         <div class="footer-wrap">
             
-          <div class="footer-top no-gutter row">
+          <div class=" footer-top no-gutter row">
               <div class="center">
                   
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-2">
                    <div class="footer-menu">
                        <ul>
                            <li class="footer-title">Каталог товаров </li>
@@ -780,7 +801,7 @@ l-->
                    </div>
                  </div>
                 
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-2">
                    <div class="footer-menu footer-menu-1">
                        <ul>
                            <li><a href="#">Тали, Тележки </a></li>
@@ -793,7 +814,7 @@ l-->
                    </div>
                  </div>
                   
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-3">
                    <div class="footer-phone">
                        <ul>
                            <li><img src="img/footer-phone.png"> (097) 123-45-78</li>
@@ -804,8 +825,8 @@ l-->
                    </div>
                  </div>
                   
-                <div class="col-lg-5">
-                   <div class="footer-serch-wrap">
+                <div class="col-lg-5 col-md-5">
+                   <div class=" clearfix footer-serch-wrap">
                        <h3>Хотите получать свежие акции и предложения?</h3>
                        <form>
                             <div class="footer-search">
@@ -827,17 +848,17 @@ l-->
             
          <div class="footer-bottom no-gutter row">
               <div class="center">
-                <div class="col-lg-2">
+                <div class="col-lg-2 col-md-2">
                    <div class="">
                        <p> &#9400 2016 ООО «Каргосет» </p>
                    </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 col-md-6">
                    <div class="">
                        
                    </div>
                  </div>
-                 <div class="col-lg-3">
+                 <div class="col-lg-3 col-md-4">
                    <div class="develop">
                        <p> Разработка интернет-магазина - <a href="#">Флаберс</a> </p>
                    </div>
